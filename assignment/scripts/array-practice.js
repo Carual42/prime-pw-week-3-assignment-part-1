@@ -88,7 +88,7 @@ console.log('The meals are now', foodArray);
 //      with another one of your favorite foods.
 //      Then log the updated array.
 foodArray[1] = 'Hash browns'
-console.log(foodArray)
+console.log('New 2nd favorite food', foodArray)
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
 foodArray.sort();
@@ -98,12 +98,13 @@ console.log(foodArray);
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-let text = "";
-foodArray.forEach(andText);
+//let text = "";
+//foodArray.forEach(andText);
  
-function andText(foodArray) {
-  text += foodArray + " and " }
-  console.log(text)
+console.log(foodArray.join(" and "))
+//function andText(foodArray) {
+  //text += foodArray + " and " }
+  //console.log(text)
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
